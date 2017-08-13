@@ -1,0 +1,48 @@
+﻿@model IEnumerable<DataLayer.Employee>
+
+@{
+    ViewBag.Title = "ShowCandidates";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>ShowCandidates</h2>
+
+
+<table class="table table-bordered table-inverse">
+    <tr>
+        <th>
+            @Html.DisplayName("Employee ID")
+        </th>
+        <th>
+            @Html.DisplayName("Employee Name")
+
+        </th>
+        <th>
+            @Html.DisplayName("Department ID")
+
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Employee_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Employee_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Department_id)
+            </td>
+
+
+        </tr>
+    }
+
+</table>
+<p>
+        @Html.ActionLink("Back to List", "SelectCandidates")
+
+</p>

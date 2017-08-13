@@ -1,0 +1,52 @@
+﻿@model DataLayer.Employee
+
+@{
+    ViewBag.Title = "Signin";
+}
+
+<div @*style="background-color:#C63D0F;"*@>
+    <div class="container  no-margin no-padding">
+        <div class="card card-container">
+            <form method="post">
+            <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+
+            <div>
+                <label style="color:white">Username:</label>
+                 @Html.ValidationMessageFor(model => model.Employee_id)
+            </div>
+            
+            <div>
+                <input type="text" placeholder="Username" name="Employee_name"  class="form-control " />
+            </div>
+            <div>
+                <br />
+                <div>
+                    <label style="color:white">Password:</label>
+                     @Html.ValidationMessageFor(model => model.Employee_password)
+                </div>
+            </div>
+
+            <div>
+                <input type="password" placeholder="Password"  name="Employee_password"  class="form-control " />
+
+            </div>
+            <div>
+                <br />
+            </div>
+            
+            <div>
+                <input type="submit" value="Signin" class="form-control " />
+
+            </div>
+                   
+                
+            <div>
+                <br />
+            </div>
+           
+            
+            </a>
+                </form>
+        </div>
+    </div>
+</div>

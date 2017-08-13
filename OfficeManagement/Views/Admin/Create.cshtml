@@ -1,0 +1,116 @@
+﻿@model DataLayer.Employee
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>Create</h2>
+@{
+   List<SelectListItem> emp_type= new List<SelectListItem>();
+   emp_type.Add(new SelectListItem
+        {
+          Text = "Employee",
+          Value = "Employee",
+          Selected = true
+        });
+   emp_type.Add(new SelectListItem
+        {
+            Text = "Admin",
+            Value = "Admin",
+            
+        });
+   
+}
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Employee</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Employee_name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Employee_name)
+            @Html.ValidationMessageFor(model => model.Employee_name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Employee_id)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Employee_id)
+            @Html.ValidationMessageFor(model => model.Employee_id)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Employee_password)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Employee_password, new { htmlAttributes = new { @class = "form-control", @type = "password" } })
+            @Html.ValidationMessageFor(model => model.Employee_password)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Employee_email)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Employee_email)
+            @Html.ValidationMessageFor(model => model.Employee_email)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Employee_address)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Employee_address)
+            @Html.ValidationMessageFor(model => model.Employee_address)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Phone_number)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Phone_number)
+            @Html.ValidationMessageFor(model => model.Phone_number)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Employee_Type)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.Employee_Type,emp_type)
+            @Html.ValidationMessageFor(model => model.Employee_Type)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Voter_flag)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Voter_flag)
+            @Html.ValidationMessageFor(model => model.Voter_flag)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Department_id)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.Department_id, (SelectList)ViewBag.deptid)
+            @Html.ValidationMessageFor(model => model.Department_id)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "EmployeeDetails")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

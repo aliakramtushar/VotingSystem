@@ -1,0 +1,27 @@
+﻿@model DataLayer.Department
+
+@{
+    ViewBag.Title = "DepartmentDelete";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>DepartmentDelete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Department</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Department_name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Department_name)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "DepartmentList")
+    </p>
+}

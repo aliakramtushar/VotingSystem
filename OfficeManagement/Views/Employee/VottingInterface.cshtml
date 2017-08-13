@@ -1,0 +1,19 @@
+﻿@model OfficeManagement.Models.VoterList
+
+@{
+    ViewBag.Title = "VottingInterface";
+    Layout = "~/Views/Shared/_EmployeeUserLayout.cshtml";
+}
+<h2>Voter Candidate List</h2>
+
+
+@using (Html.BeginForm())
+{
+  foreach(var voterlist in Model.Employees)
+  {
+      @Html.RadioButtonFor(m=>m.SelectedVoter,voterlist.Employee_id)@voterlist.Employee_name <br /> @voterlist.Employee_id <br />
+  }
+  <br />
+  <br />
+    <input type="submit" value="Submit" />
+}

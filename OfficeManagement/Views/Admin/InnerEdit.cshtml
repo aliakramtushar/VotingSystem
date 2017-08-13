@@ -1,0 +1,96 @@
+﻿@model DataLayer.Employee
+
+@{
+    ViewBag.Title = "InnerEdit";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>InnerEdit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Employee</legend>
+
+        @Html.HiddenFor(model => model.id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Employee_name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Employee_name)
+            @Html.ValidationMessageFor(model => model.Employee_name)
+        </div>
+
+        @Html.HiddenFor(model => model.Employee_id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Employee_password)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Employee_password)
+            @Html.ValidationMessageFor(model => model.Employee_password)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Employee_email)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Employee_email)
+            @Html.ValidationMessageFor(model => model.Employee_email)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Employee_address)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Employee_address)
+            @Html.ValidationMessageFor(model => model.Employee_address)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Phone_number)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Phone_number)
+            @Html.ValidationMessageFor(model => model.Phone_number)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Employee_Type)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Employee_Type)
+            @Html.ValidationMessageFor(model => model.Employee_Type)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Voter_flag)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Voter_flag)
+            @Html.ValidationMessageFor(model => model.Voter_flag)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Department_id)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Department_id)
+            @Html.ValidationMessageFor(model => model.Department_id)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "AdminProfile")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

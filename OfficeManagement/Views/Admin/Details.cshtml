@@ -1,0 +1,72 @@
+﻿@model DataLayer.Employee
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Employee</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Employee_name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Employee_name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Employee_password)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Employee_password)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Employee_email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Employee_email)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Employee_address)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Employee_address)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Phone_number)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Phone_number)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Employee_Type)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Employee_Type)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Voter_flag)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Voter_flag)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Department_id)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Department_id)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Employee_id }) |
+    @Html.ActionLink("Back to List", "EmployeeDetails")
+</p>

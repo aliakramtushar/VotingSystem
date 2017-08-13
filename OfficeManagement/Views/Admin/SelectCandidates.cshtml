@@ -1,0 +1,71 @@
+﻿@model IEnumerable<DataLayer.Employee>
+
+@{
+    ViewBag.Title = "SelectCandidates";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>SelectCandidates</h2>
+<div>
+    @using (@Html.BeginForm())
+        {   <b>Name :</b>
+            @Html.TextBox("searchname", null, new { id = "txtsearch" })
+            <input type="submit" value="Search" />
+       }
+
+    <br />
+
+    <table class="table table-bordered table-inverse">
+        <tr>
+            <th>
+                @Html.DisplayName("Employee Id")
+            </th>
+            <th>
+                @Html.DisplayName("Employee Name")
+            </th>
+
+
+            <th>
+                @Html.DisplayName("Candidate Flag")
+            </th>
+            <th>
+                @Html.DisplayName("Department ID")
+            </th>
+            <th>
+                Option
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Employee_id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Employee_name)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Candidate_flag)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Department_id)
+                </td>
+                <td>
+                    @Html.ActionLink("Add", "Add", new { id = item.Employee_id })
+
+                </td>
+            </tr>
+        }
+
+    </table>
+    </div>
+<div>
+    @Html.ActionLink("Show Eligiable Candidats","ShowCandidates")
+</div>
+
+<p>
+        @Html.ActionLink("Back to List", "VoteSection")
+
+</p>

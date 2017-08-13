@@ -1,0 +1,68 @@
+﻿@model IEnumerable<DataLayer.Employee>
+
+
+@{
+    ViewBag.Title = "VoteSection";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>VoteSection</h2>
+
+<div class="row">
+    <div class="col-md-6">
+
+       @* @Html.ActionLink("Select Candidates", "SelectCandidates", new { @class = "buttonfora" })<br />*@
+          <a class="buttonfora" href='@Url.Action("SelectCandidates", "Admin")'>
+                Select Candidates
+               </a>
+    </div>
+    <div class="col-md-6">
+
+
+       @* @Html.ActionLink("Add Voter Department", "EditVoterDepartment", new { @class = "buttonfora" })*@
+        <a class="buttonfora" href='@Url.Action("EditVoterDepartment", "Admin")'>
+                Add Voter Department
+               </a>
+
+    </div>
+
+    <div class="col-md-6">
+     <br />
+    <br />
+
+
+        @*@Html.ActionLink("Show Votting Result", "ShowResult", new { @class = "buttonfora" })*@
+         <a class="buttonfora" href='@Url.Action("ShowResult", "Admin")'>
+                Show Current Votting Details
+               </a>
+
+    </div>
+     
+
+    <div class="col-md-6">
+     <br />
+    <br />
+
+
+        @*@Html.ActionLink("Show Votting Result", "ShowResult", new { @class = "buttonfora" })*@
+         <a class="buttonfora" href='@Url.Action("Reset", "Admin")'>
+                Reset All
+               </a>
+
+    </div>
+    </div>
+    <br />
+    <br />
+
+    <br />
+    <br />
+    <br />
+
+   
+        <p>
+            @Html.ActionLink("go to back", "Index", new { @class = "buttonfora" })
+
+        </p>
+
+
+

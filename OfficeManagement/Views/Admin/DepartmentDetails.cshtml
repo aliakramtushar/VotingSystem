@@ -1,0 +1,23 @@
+﻿@model DataLayer.Department
+
+@{
+    ViewBag.Title = "DepartmentDetails";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>DepartmentDetails</h2>
+
+<fieldset>
+    <legend>Department</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Department_name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Department_name)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "DepartmentEdit", new { id=Model.Department_id }) |
+    @Html.ActionLink("Back to List", "DepartmentList")
+</p>

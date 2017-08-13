@@ -1,0 +1,84 @@
+﻿@model IEnumerable<DataLayer.Employee>
+
+@{
+    ViewBag.Title = "Vote";
+}
+
+<h2>Vote</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Employee_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Employee_password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Employee_email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Employee_address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone_number)
+        </th>
+        <th>    
+            @Html.DisplayNameFor(model => model.Employee_Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Candidate_flag)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Voter_flag)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Count)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Department_id)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Employee_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Employee_email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Employee_address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Phone_number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Employee_Type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Candidate_flag)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Voter_flag)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Count)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Department_id)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

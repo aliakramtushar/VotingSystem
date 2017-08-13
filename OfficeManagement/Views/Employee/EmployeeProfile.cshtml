@@ -1,0 +1,60 @@
+﻿@model DataLayer.Employee
+
+@{
+    ViewBag.Title = "EmployeeProfile";
+    Layout = "~/Views/Shared/_EmployeeUserLayout.cshtml";
+}
+
+<h2>EmployeeProfile</h2>
+
+<fieldset>
+    
+    <legend>Employee</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Employee_name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Employee_name)
+    </div><br />
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Employee_password)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Employee_password)
+    </div>
+    <br />
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Employee_email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Employee_email)
+    </div>
+    <br />
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Employee_address)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Employee_address)
+    </div>
+    <br />
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Phone_number)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Phone_number)
+    </div>
+    <br />
+
+   
+
+    
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Employee")
+</p>

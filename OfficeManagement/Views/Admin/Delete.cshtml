@@ -1,0 +1,76 @@
+﻿@model DataLayer.Employee
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Employee</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Employee_name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Employee_name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Employee_password)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Employee_password)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Employee_email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Employee_email)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Employee_address)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Employee_address)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Phone_number)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Phone_number)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Employee_Type)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Employee_Type)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Voter_flag)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Voter_flag)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Department_id)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Department_id)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "EmployeeDetails")
+    </p>
+}

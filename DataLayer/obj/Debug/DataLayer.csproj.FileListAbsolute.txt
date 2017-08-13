@@ -1,0 +1,56 @@
+E:\Final Project\OfficeManagement\DataLayer\bin\Debug\DataLayer.dll.config
+E:\Final Project\OfficeManagement\DataLayer\bin\Debug\DataLayer.dll
+E:\Final Project\OfficeManagement\DataLayer\bin\Debug\DataLayer.pdb
+E:\Final Project\OfficeManagement\DataLayer\bin\Debug\EntityFramework.dll
+E:\Final Project\OfficeManagement\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\Final Project\OfficeManagement\DataLayer\bin\Debug\EntityFramework.xml
+E:\Final Project\OfficeManagement\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\Final Project\OfficeManagement\DataLayer\obj\Debug\DataLayer.dll
+E:\Final Project\OfficeManagement\DataLayer\obj\Debug\DataLayer.pdb
+F:\ATP2\Final\OfficeManagement\DataLayer\bin\Debug\DataLayer.dll.config
+F:\ATP2\Final\OfficeManagement\DataLayer\bin\Debug\DataLayer.dll
+F:\ATP2\Final\OfficeManagement\DataLayer\bin\Debug\DataLayer.pdb
+F:\ATP2\Final\OfficeManagement\DataLayer\bin\Debug\EntityFramework.dll
+F:\ATP2\Final\OfficeManagement\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+F:\ATP2\Final\OfficeManagement\DataLayer\bin\Debug\EntityFramework.xml
+F:\ATP2\Final\OfficeManagement\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+F:\ATP2\Final\OfficeManagement\DataLayer\obj\Debug\DataLayer.dll
+F:\ATP2\Final\OfficeManagement\DataLayer\obj\Debug\DataLayer.pdb
+F:\ATP2\Final\OfficeManagement\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Desktop\1\OfficeManagement\DataLayer\bin\Debug\DataLayer.dll.config
+C:\Users\ASUS\Desktop\1\OfficeManagement\DataLayer\bin\Debug\DataLayer.dll
+C:\Users\ASUS\Desktop\1\OfficeManagement\DataLayer\bin\Debug\DataLayer.pdb
+C:\Users\ASUS\Desktop\1\OfficeManagement\DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\Desktop\1\OfficeManagement\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Desktop\1\OfficeManagement\DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\Desktop\1\OfficeManagement\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Desktop\1\OfficeManagement\DataLayer\obj\Debug\DataLayer.dll
+C:\Users\ASUS\Desktop\1\OfficeManagement\DataLayer\obj\Debug\DataLayer.pdb
+E:\atp project backup\OfficeManagement\DataLayer\bin\Debug\DataLayer.dll.config
+E:\atp project backup\OfficeManagement\DataLayer\bin\Debug\DataLayer.dll
+E:\atp project backup\OfficeManagement\DataLayer\bin\Debug\DataLayer.pdb
+E:\atp project backup\OfficeManagement\DataLayer\bin\Debug\EntityFramework.dll
+E:\atp project backup\OfficeManagement\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\atp project backup\OfficeManagement\DataLayer\bin\Debug\EntityFramework.xml
+E:\atp project backup\OfficeManagement\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\atp project backup\OfficeManagement\DataLayer\obj\Debug\DataLayer.dll
+E:\atp project backup\OfficeManagement\DataLayer\obj\Debug\DataLayer.pdb
+C:\Users\ASUS\Desktop\anik\OfficeManagement\DataLayer\bin\Debug\DataLayer.dll.config
+C:\Users\ASUS\Desktop\anik\OfficeManagement\DataLayer\bin\Debug\DataLayer.dll
+C:\Users\ASUS\Desktop\anik\OfficeManagement\DataLayer\bin\Debug\DataLayer.pdb
+C:\Users\ASUS\Desktop\anik\OfficeManagement\DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\Desktop\anik\OfficeManagement\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Desktop\anik\OfficeManagement\DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\Desktop\anik\OfficeManagement\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Desktop\anik\OfficeManagement\DataLayer\obj\Debug\DataLayer.dll
+C:\Users\ASUS\Desktop\anik\OfficeManagement\DataLayer\obj\Debug\DataLayer.pdb
+C:\Users\stive\Desktop\OfficeManagement\DataLayer\bin\Debug\DataLayer.dll.config
+C:\Users\stive\Desktop\OfficeManagement\DataLayer\bin\Debug\DataLayer.dll
+C:\Users\stive\Desktop\OfficeManagement\DataLayer\bin\Debug\DataLayer.pdb
+C:\Users\stive\Desktop\OfficeManagement\DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\stive\Desktop\OfficeManagement\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\stive\Desktop\OfficeManagement\DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\stive\Desktop\OfficeManagement\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\stive\Desktop\OfficeManagement\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\stive\Desktop\OfficeManagement\DataLayer\obj\Debug\DataLayer.dll
+C:\Users\stive\Desktop\OfficeManagement\DataLayer\obj\Debug\DataLayer.pdb

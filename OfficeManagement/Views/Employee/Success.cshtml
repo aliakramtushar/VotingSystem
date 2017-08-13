@@ -1,0 +1,12 @@
+﻿@model DataLayer.Employee
+
+@{
+    ViewBag.Title = "Success";
+    Layout = "~/Views/Shared/_EmployeeUserLayout.cshtml";
+}
+
+<h1>You Have Voted Successfully. And You Can't Vote More Than Once Thank You! </h1>
+
+<div>
+    @Html.ActionLink("Back to List", "EmployeeHome")
+</div>

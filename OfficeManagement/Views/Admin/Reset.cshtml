@@ -1,0 +1,19 @@
+﻿@model DataLayer.Employee
+
+@{
+    ViewBag.Title = "Reset";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>Reset</h2>
+<center>
+    <h1>
+        <b>Now Previous Voting History is Reseted ,</b><br />
+        <b>Now You Can Start New Vote.</b>
+    </h1>
+    
+</center><br /><br /><br />
+
+<p>
+    @Html.ActionLink("go to back", "VoteSection")
+</p>

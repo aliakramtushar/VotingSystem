@@ -1,0 +1,29 @@
+﻿@model DataLayer.Employee
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<center><h2><b>Admin</b></h2></center>
+
+<br />
+
+<div class="row">
+    <div class="col-md-6">
+
+        <a class="buttonfora" href='@Url.Action("OfficeMangement", "Admin")'>
+            Employee
+        </a>
+
+    </div>
+    <div class="col-md-6">
+
+        <a class="buttonfora"  href='@Url.Action("VoteSection", "Admin")'>
+
+            Manage Vote Section
+
+        </a>
+
+    </div>
+</div>

@@ -1,0 +1,100 @@
+﻿@model IEnumerable<DataLayer.Employee>
+
+@{
+    ViewBag.Title = "Employee Details";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+<script src="~/Scripts/jquery.js"></script>
+<script src="~/Scripts/jquery-ui.min.js"></script>
+<script src="~/Scripts/jquery-1.8.3.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+        $("#txtsearch").autocomplete({
+            source:'@Url.Action("GetEmployeeName")'
+        });
+    });
+</script>
+            <center><h2><b>Employee Details</b></h2></center>
+<div class="row">
+    <div class="col-md-6">
+
+        
+        @using (@Html.BeginForm())
+        {   <b>Name :</b>
+            @Html.TextBox("searchname", null, new { id = "txtsearch" })
+            <input type="submit" value="Search" />
+        }
+        <br />
+        <br />
+
+        <table class="table table-bordered table-inverse">
+            <tr>
+                <th>
+                    @Html.DisplayName("Employee Name")
+                </th>
+                <th>
+                    @Html.DisplayName("Employee ID")
+                </th>
+                <th>
+                    @Html.DisplayName("Email")
+                </th>
+                <th>
+                    @Html.DisplayName("Address")
+                </th>
+                <th>
+                    @Html.DisplayName("Phone Number")
+                </th>
+                <th>
+                    @Html.DisplayName("Department ID")
+                </th>
+                <th>
+                    Options
+                </th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Employee_name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Employee_id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Employee_email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Employee_address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Phone_number)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Department_id)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.Employee_id }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.Employee_id }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.Employee_id })
+                    </td>
+                </tr>
+            }
+
+        </table>
+        <br />
+        <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+
+    </div>
+
+
+    
+</div>
+<p>
+        @Html.ActionLink("Back to List", "OfficeMangement")
+
+</p>

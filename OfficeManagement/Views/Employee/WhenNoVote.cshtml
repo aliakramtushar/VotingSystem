@@ -1,0 +1,14 @@
+﻿@model DataLayer.Employee
+
+@{
+    ViewBag.Title = "WhenNoVote";
+    Layout = "~/Views/Shared/_EmployeeUserLayout.cshtml";
+}
+
+<h2>WhenNoVote</h2>
+
+<h1>You Already Give Your vote Or No Voting Available For You </h1>
+
+<div>
+    @Html.ActionLink("Back to List", "EmployeeHome")
+</div>

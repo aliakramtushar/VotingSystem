@@ -1,0 +1,37 @@
+﻿@model DataLayer.Department
+
+@{
+    ViewBag.Title = "DepartmentCreate";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>DepartmentCreate</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Department</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Department_name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Department_name)
+            @Html.ValidationMessageFor(model => model.Department_name)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "DepartmentList")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "EmployeePanel";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+<br />
+<br />
+<br />
+
+<div class="row">
+    <div class="col-md-6">
+
+        <a class="buttonfora" href='@Url.Action("EmployeeDetails", "Admin")'>
+            Employee Section
+       </a>
+
+    </div>
+    <div class="col-md-6">
+
+        <a class="buttonfora" href='@Url.Action("DepartmentList", "Admin")'>
+
+            Department Section
+
+        </a>
+
+    </div>
+    <br />
+    <br />
+
+    <br />
+    <br />
+    <br />
+
+    
+        <p>
+            @Html.ActionLink("go to back", "Index")
+
+        </p>
+    
+</div>

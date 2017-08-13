@@ -1,0 +1,52 @@
+﻿@model IEnumerable<DataLayer.Employee>
+
+@{
+    ViewBag.Title = "ShowResultFromEmployee";
+    Layout = "~/Views/Shared/_EmployeeUserLayout.cshtml";
+}
+
+<h2>ShowResultFromEmployee</h2>
+
+
+<table border="1">
+    <tr>
+        <th>
+            @Html.DisplayName("Candidate Id")
+        </th>
+        <th>
+          @Html.DisplayName("Candidate Name")
+        </th>
+        
+        <th>
+            @Html.DisplayName("Department Id")
+        </th>
+        <th>
+           @Html.DisplayName("Total Vote")
+        </th>
+        
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Employee_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Employee_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Department_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Count)
+        </td>
+       
+       
+    </tr>
+}
+
+</table>
+
+<div>
+    @Html.ActionLink("Back to List", "EmployeeHome")
+</div>

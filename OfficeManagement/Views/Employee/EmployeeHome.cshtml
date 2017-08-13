@@ -1,0 +1,33 @@
+﻿@model DataLayer.Employee
+
+@{
+    ViewBag.Title = "EmployeeHome";
+    Layout = "~/Views/Shared/_EmployeeUserLayout.cshtml";
+}
+
+<h2>EmployeeHome</h2>
+
+<br />
+<br />
+
+
+<div class="row">
+    <div class="col-md-6">
+
+        <a class="buttonfora" href='@Url.Action("VottingInterface", "Employee")'>
+            Click Here to Vote
+
+        </a>
+
+    </div>
+
+    <div class="col-md-6">
+
+        <a class="buttonfora" href='@Url.Action("ShowResultFromEmployee", "Employee")'>
+            Click Here to Show Current Result
+
+        </a>
+
+    </div>
+</div>
+

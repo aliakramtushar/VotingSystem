@@ -1,0 +1,39 @@
+﻿@model IEnumerable<DataLayer.Department>
+
+@{
+    ViewBag.Title = "DepartmentList";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>DepartmentList</h2>
+
+<p>
+    @Html.ActionLink("Create New", "DepartmentCreate")
+</p>
+<table class="table table-bordered table-inverse">
+    <tr>
+        <th>
+            @Html.DisplayName("Department Name")
+        </th>
+        <th>OPTIONS</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Department_name)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "DepartmentEdit", new { id = item.Department_id }) |
+                @Html.ActionLink("Details", "DepartmentDetails", new { id = item.Department_id }) |
+                @Html.ActionLink("Delete", "DepartmentDelete", new { id = item.Department_id })
+            </td>
+        </tr>
+    }
+
+</table>
+<p>
+        @Html.ActionLink("Back to List", "OfficeMangement")
+
+</p>
